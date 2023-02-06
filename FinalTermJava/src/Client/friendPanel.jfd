@@ -1,0 +1,99 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "friendBtn"
+				"text": "Friends"
+				"horizontalAlignment": 0
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "friendBtnMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 150
+				"width": 85
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "worldBtn"
+				"text": "World"
+				"horizontalAlignment": 0
+				"cursor": #Cursor0
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "worldBtnMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 85
+				"height": 30
+				"x": 125
+				"y": 150
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "searchBtn"
+				"horizontalAlignment": 0
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "searchBtnMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 30
+				"height": 30
+				"x": 420
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/back-icon.png" )
+				"selectedIcon": new com.jformdesigner.model.SwingIcon( 0, "/back-icon1.png" )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"borderPainted": false
+				"cursor": new java.awt.Cursor( 12 )
+				"contentAreaFilled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBtn", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 25
+				"width": 50
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"viewportBorder": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"horizontalScrollBarPolicy": 31
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "friendListPanel"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -5
+				"y": 190
+				"width": 530
+				"height": 315
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchTf"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 240
+				"y": 37
+				"width": 180
+				"height": 26
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "background"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/friend-bg.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}
